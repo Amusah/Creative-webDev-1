@@ -1,0 +1,96 @@
+// Navbar and Hero section
+#home{
+  position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+  .main-head {
+    background-color: #131c27;
+    color: #fff;
+    
+  }
+
+  nav {
+    min-height: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+  
+    ul {
+      display: flex;
+      flex: 1 1 40rem;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+  
+      a:hover {
+        color: $btn-color;
+      }
+    }
+  
+    #logo {
+      flex: 2 1 40rem;
+      font-style: italic;
+    }
+  }
+
+}
+
+
+
+button {
+  background: $btn-color;
+  padding: 2rem 6rem;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 30rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: lighten($btn-color, 5%);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    background: darken($btn-color, 5%);
+    color: rgb(216, 212, 212);
+  }
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  align-items: center;
+  text-align: center;
+
+  img {
+    height: 12rem;
+    background: #131c27;
+    width: 100%;
+    padding: 4rem;
+  }
+
+  .card {
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+
+    h4 {
+      padding: 3rem;
+    }
+
+    p{
+      padding: 2rem;
+    }
+  }
+}
